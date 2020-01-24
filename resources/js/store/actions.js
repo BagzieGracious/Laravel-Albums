@@ -27,7 +27,7 @@ const actions = {
 
 		}).catch(err => {
 			// get back error message
-			console.log(err)
+			console.log(err.response.data)
 
 		})
 	},

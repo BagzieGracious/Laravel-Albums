@@ -21,4 +21,8 @@ Route::patch('/users/resetpassword', 'SessionController@reset');
 Route::post('/login', 'SessionController@store')->name('login');
 Route::get('/logout', 'SessionController@destroy');
 
-Route::resource('register', 'RegistrationController');
+Route::resources([
+	'register' => 'RegistrationController',
+	'albums' => 'AlbumController',
+	'albums.comments' => 'CommentController'
+]);
