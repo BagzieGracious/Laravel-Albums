@@ -24,4 +24,5 @@ Route::get('/logout', 'SessionController@destroy');
 Route::resources([
 	'register' => 'RegistrationController',
 	'albums' => 'AlbumController',
+	'albums.comments' => 'CommentController'
 ]);
